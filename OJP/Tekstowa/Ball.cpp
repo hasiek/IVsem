@@ -41,7 +41,12 @@ bool judge(CBall ball, CGoal goal1, CGoal goal2) {
 	bool goal11 = false;
 	bool goal22 = false;
 
-	if (!((ballx >= PITCHX) && (ballx <= (PITCHX + PITCHSIDE)) && (bally >= PITCHY) && (bally <= (PITCHY + PITCHSIDE)))) cout << "AUT!" << endl;
+	if (!((ballx >= PITCHX) && (ballx <= (PITCHX + PITCHSIDE)) && (bally >= PITCHY) && (bally <= (PITCHY + PITCHSIDE)))) {
+		
+		cout << "AUT!" << endl;
+		ball.set_x(25);
+		ball.set_y(25);
+	}
 
 	if ((ballx >= goalx) && (ballx <= (goalx + goalside)) && (bally >= goaly) && (bally <= (goaly + goalside))) {
 
