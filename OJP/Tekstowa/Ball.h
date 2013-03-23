@@ -1,9 +1,13 @@
 #pragma once
 
+class CGoal;
+
 class CBall {
 
 	int x;
 	int y;
+
+	friend bool judge(CBall ball, CGoal goal1, CGoal goal2);
 
 public:
 	
