@@ -10,8 +10,8 @@ double derivative(double x);
 
 int main() {
 
-	double xl = 0.4;
-	double xr = 0.7;
+	double xl = 0;
+	double xr = 3;
 	double x0 = xl;
 	double x01;
 	double error;
@@ -48,14 +48,14 @@ int main() {
 
 double function(double x) {
 
-	double result = (6435*pow(x,8) - 12012*pow(x,6) + 6930*pow(x,4) - 1260*pow(x,2) + 35)/128;
+	double result = pow(x,2) - 2*x - 2;
 	return result;
 
 };
 
 double derivative(double x) {
 
-	double result = (6435*8*pow(x,7) - 12012*6*pow(x,5) + 6930*4*pow(x,3) - 1260*2*x)/128;
+	double result = 2*x - 2;
 	return result;
 
 };
