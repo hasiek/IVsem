@@ -21,7 +21,7 @@ public:
 	int get_x() {return x;}
 	int get_y() {return y;}
 	int get_bok() {return bok;}
-	friend void judge(CBramka1 bramka1, CBramka2 bramka2, CBall ball);
+	friend int judge(CBramka1 bramka1, CBramka2 bramka2, CBall ball);
 
 };
 
@@ -39,7 +39,7 @@ public:
 	int get_x() {return x;}
 	int get_y() {return y;}
 	int get_bok() {return bok;}
-	friend void judge(CBramka1 bramka1, CBramka2 bramka2, CBall ball);
+	friend int judge(CBramka1 bramka1, CBramka2 bramka2, CBall ball);
 
 };
 
@@ -54,22 +54,22 @@ public:
 	void set_y(int y1) {y = y1;}
 	int get_x() {return x;}
 	int get_y() {return y;}
-	friend void judge(CBramka1 bramka1, CBramka2 bramka2, CBall ball);
+	friend int judge(CBramka1 bramka1, CBramka2 bramka2, CBall ball);
 };
 
-void judge(CBramka1 bramka1, CBramka2 bramka2, CBall ball) {
-
-	if ((ball.x >= bramka1.x) && (ball.x <= (bramka1.x + bramka1.bok)) && (ball.y >= bramka1.y) (ball.y <= bramka1.y + bramka1.bok)) {
-
-
-	}
+int judge(CBramka1 bramka1, CBramka2 bramka2, CBall ball) {
+	
+	if ((ball.get_x() >= bramka1.get_x()) && (ball.get_x() <= (bramka1.get_x() + bramka1.get_bok())) && (ball.get_y() >= bramka1.get_y()) (ball.get_y() <= bramka1.get_y() + bramka1.get_bok())) return 1;
+	else if ((ball.x >= bramka2.x) && (ball.x <= (bramka2.x + bramka2.bok)) && (ball.y >= bramka2.y) (ball.y <= bramka2.y + bramka2.bok)) return 2;
+	else return 0;
 
 }
 
 int main() {
 
-
+	CBramka1 bramka1 = new CBramka1(0,0,15);
+	
 		
-	system("pause");
+	// system("pause");
 	return 0;
 }
