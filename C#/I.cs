@@ -7,8 +7,8 @@ namespace ConsoleApplication1 {
 
     class Punkt
     {
-        int x;
-        int y;
+        public int x { get; set; }
+        public int y { get; set; }
 
         public Punkt() 
         {
@@ -24,8 +24,6 @@ namespace ConsoleApplication1 {
             this.y = y;
 
         }
-
-        public int get_x() { return x; }
 
         ~Punkt(){}
      
