@@ -99,9 +99,10 @@ public:
 
 int main() {
 
-	KolorowyPunkt kolorowyPunkt = KolorowyPunkt();
+	KolorowyPunkt kolorowyPunkt = KolorowyPunkt(32,23,31,"kolorek","czarny");
 
-	kolorowyPunkt.wypiszKol();
+	// kolorowyPunkt.wypiszKol();
+	cout << kolorowyPunkt.get_x() << endl;
 	cout << kolorowyPunkt.odleglosc() << endl;
 
 	system("pause");
