@@ -1,0 +1,40 @@
+﻿Build started 2013-05-30 13:21:15.
+     1>Project "C:\Users\Kaśka_2\Desktop\Studia\II rok\OJP\My Book Saver\My Book Saver\My Book Saver.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\My Book Saver.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       GenerateTargetFrameworkMonikerAttribute:
+       Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\My Book Saver.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt Form2.cpp Form3.cpp Form4.cpp "My Book Saver.cpp" /clr:nostdlib 
+         Form2.cpp
+         Form3.cpp
+         Form4.cpp
+         My Book Saver.cpp
+         Generating Code...
+         All outputs are up-to-date.
+       CoreResGen:
+         "C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\NETFX 4.0 Tools\resgen.exe" /useSourcePath /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.DataVisualization.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /compile Form4.resx,Debug\MyBookSaver.Form4.resources
+         Processing resource file "Form4.resx" into "Debug\MyBookSaver.Form4.resources".
+       ResourceCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kaśka_2\Desktop\Studia\II rok\OJP\My Book Saver\Debug\My Book Saver.exe" /INCREMENTAL:NO /NOLOGO /ASSEMBLYRESOURCE:Debug\MyBookSaver.Form1.resources /ASSEMBLYRESOURCE:Debug\MyBookSaver.Form2.resources /ASSEMBLYRESOURCE:Debug\MyBookSaver.Form3.resources /ASSEMBLYRESOURCE:Debug\MyBookSaver.Form4.resources /MANIFEST /ManifestFile:"Debug\My Book Saver.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Kaśka_2\Desktop\Studia\II rok\OJP\My Book Saver\Debug\My Book Saver.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         Debug\AssemblyInfo.obj
+         Debug\Form2.obj
+         Debug\Form3.obj
+         Debug\Form4.obj
+         "Debug\My Book Saver.obj"
+         Debug\stdafx.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         My Book Saver.vcxproj -> C:\Users\Kaśka_2\Desktop\Studia\II rok\OJP\My Book Saver\Debug\My Book Saver.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Kaśka_2\Desktop\Studia\II rok\OJP\My Book Saver\Debug\My Book Saver.exe;#1" /manifest "Debug\My Book Saver.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         Deleting file "Debug\My Book Saver.unsuccessfulbuild".
+         Touching "Debug\My Book Saver.lastbuildstate".
+     1>Done Building Project "C:\Users\Kaśka_2\Desktop\Studia\II rok\OJP\My Book Saver\My Book Saver\My Book Saver.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.09
