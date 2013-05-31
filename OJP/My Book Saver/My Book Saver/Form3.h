@@ -158,6 +158,30 @@ namespace MyBookSaver {
 				 StreamWriter^ book = gcnew StreamWriter("Books\\" + Books -> SelectedItem -> ToString() + ".txt", true);
 				 book -> WriteLine(page -> Text);
 				 book -> Close();
+				 if(Convert::ToInt32(page->Text) >= page -> Maximum) {
+					 
+					 MessageBox::Show("Congratulations, you've finished the book!", "The book is over", MessageBoxButtons::OK);
+					 StreamReader^ fromList = gcnew StreamReader("Books\\list.txt");
+					 StreamWriter^ toList = gcnew StreamWriter("Books\\list1.txt");
+					 String^ readLine = " ";
+					 while (fromList -> Peek() > 0) {
+
+						 readLine = fromList -> ReadLine();
+						 if(readLine != Books -> SelectedItem -> ToString() + ".txt") toList -> WriteLine(readLine);
+						 else {
+
+							 StreamWriter^ finished = gcnew StreamWriter("Books\\finished.txt");
+							 finished -> WriteLine(readLine);
+							 finished -> Close();
+
+						 }
+					 }
+					 fromList -> Close();
+					 toList -> Close();
+					 File::Delete("Books\\list.txt");
+					 File::Move("Books\\list1.txt", "Books\\list.txt");
+					 
+				 }
 
 			 }
 private: System::Void Back_Click(System::Object^  sender, System::EventArgs^  e) {
