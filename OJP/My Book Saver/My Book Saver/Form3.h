@@ -120,17 +120,17 @@ namespace MyBookSaver {
 
 	private: System::Void Form3_Load(System::Object^  sender, System::EventArgs^  e) {
 			
-			this -> Books -> BeginUpdate();
-			StreamReader^ list = gcnew StreamReader("Books\\list.txt");
-			while(list -> Peek() > 0) {
+				this -> Books -> BeginUpdate();
+				StreamReader^ list = gcnew StreamReader("Books\\list.txt");
+				while(list -> Peek() > 0) {
 
-				String^ element = list -> ReadLine();
-				element = element -> Substring(0, (element -> Length) - 4);
-				this -> Books -> Items -> Add(element);
-			}
-			list -> Close();
-			this -> Books -> SelectedIndex = 0;
-			this -> Books -> EndUpdate();
+					String^ element = list -> ReadLine();
+					element = element -> Substring(0, (element -> Length) - 4);
+					this -> Books -> Items -> Add(element);
+				}
+				list -> Close();
+				this -> Books -> SelectedIndex = 0;
+				this -> Books -> EndUpdate();
 
 			}
 	private: System::Void wybierz_Click(System::Object^  sender, System::EventArgs^  e) {

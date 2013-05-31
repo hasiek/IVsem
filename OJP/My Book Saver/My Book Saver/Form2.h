@@ -46,6 +46,7 @@ namespace MyBookSaver {
 	private: System::Windows::Forms::Label^  label3;
 	private: System::Windows::Forms::Label^  label4;
 	private: System::Windows::Forms::Button^  Confirm;
+	private: System::Windows::Forms::Button^  Back;
 	protected: 
 
 	protected: 
@@ -71,6 +72,7 @@ namespace MyBookSaver {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->Confirm = (gcnew System::Windows::Forms::Button());
+			this->Back = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// Author
@@ -134,7 +136,7 @@ namespace MyBookSaver {
 			// 
 			// Confirm
 			// 
-			this->Confirm->Location = System::Drawing::Point(165, 69);
+			this->Confirm->Location = System::Drawing::Point(166, 31);
 			this->Confirm->Name = L"Confirm";
 			this->Confirm->Size = System::Drawing::Size(105, 51);
 			this->Confirm->TabIndex = 7;
@@ -142,11 +144,22 @@ namespace MyBookSaver {
 			this->Confirm->UseVisualStyleBackColor = true;
 			this->Confirm->Click += gcnew System::EventHandler(this, &Form2::Confirm_Click);
 			// 
+			// Back
+			// 
+			this->Back->Location = System::Drawing::Point(166, 108);
+			this->Back->Name = L"Back";
+			this->Back->Size = System::Drawing::Size(105, 51);
+			this->Back->TabIndex = 8;
+			this->Back->Text = L"Back";
+			this->Back->UseVisualStyleBackColor = true;
+			this->Back->Click += gcnew System::EventHandler(this, &Form2::Back_Click);
+			// 
 			// Form2
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(296, 199);
+			this->Controls->Add(this->Back);
 			this->Controls->Add(this->Confirm);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label3);
@@ -183,5 +196,10 @@ namespace MyBookSaver {
 				 else MessageBox::Show("Insert all information!", "Not enough data!", MessageBoxButtons::OK);
 
 			 }
+private: System::Void Back_Click(System::Object^  sender, System::EventArgs^  e) {
+
+			 Close();
+
+		 }
 };
 }
